@@ -1,0 +1,47 @@
+from __future__ import unicode_literals
+
+from django.db import models
+class LmsCompanies(models.Model):
+    id = models.CharField(max_length=-1, blank=True, null=True)
+    custid = models.CharField(max_length=-1, blank=True, null=True)
+    clientcode = models.CharField(max_length=-1, blank=True, null=True)
+    name = models.CharField(max_length=-1, blank=True, null=True)
+    street = models.CharField(max_length=-1, blank=True, null=True)
+    street2 = models.CharField(max_length=-1, blank=True, null=True)
+    city = models.CharField(max_length=-1, blank=True, null=True)
+    st = models.CharField(max_length=-1, blank=True, null=True)
+    zip = models.CharField(max_length=-1, blank=True, null=True)
+    country = models.CharField(max_length=-1, blank=True, null=True)
+    phone = models.CharField(max_length=-1, blank=True, null=True)
+    ext = models.CharField(max_length=-1, blank=True, null=True)
+    phone2 = models.CharField(max_length=-1, blank=True, null=True)
+    ext2 = models.CharField(max_length=-1, blank=True, null=True)
+    phone3 = models.CharField(max_length=-1, blank=True, null=True)
+    ext3 = models.CharField(max_length=-1, blank=True, null=True)
+    fax = models.CharField(max_length=-1, blank=True, null=True)
+    faxext = models.CharField(max_length=-1, blank=True, null=True)
+    website = models.CharField(max_length=-1, blank=True, null=True)
+    ftpsite = models.CharField(max_length=-1, blank=True, null=True)
+    email = models.CharField(max_length=-1, blank=True, null=True)
+    email2 = models.CharField(max_length=-1, blank=True, null=True)
+    uspspermit = models.CharField(max_length=-1, blank=True, null=True)
+    shipacct = models.CharField(max_length=-1, blank=True, null=True)
+    contact = models.CharField(max_length=-1, blank=True, null=True)
+    card_recd = models.CharField(max_length=-1, blank=True, null=True)
+    curr_dr13 = models.CharField(max_length=-1, blank=True, null=True)
+    sales_rep = models.CharField(max_length=-1, blank=True, null=True)
+    tax_exempt = models.CharField(max_length=-1, blank=True, null=True)
+    terms = models.CharField(max_length=-1, blank=True, null=True)
+    ohdir = models.CharField(max_length=-1, blank=True, null=True)
+    gmacctno = models.CharField(max_length=-1, blank=True, null=True)
+    gmcreator = models.CharField(max_length=-1, blank=True, null=True)
+    gmlastuse = models.CharField(max_length=-1, blank=True, null=True)
+    cwretail = models.CharField(max_length=-1)
+    buymas = models.CharField(max_length=-1)
+    hibernate = models.CharField(max_length=-1)
+    deadbeat = models.CharField(max_length=-1)
+    ac_id = models.CharField(max_length=-1)
+
+    class Meta:
+        managed = False
+        db_table = 'lms_companies'

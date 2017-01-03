@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is supper cool </title>
+</head>
+<body>
+	<form action="" method="post">
+		<div>
+			<label for="name">Text Input:</label>
+			<input type="text" name="search" id="name" value="" tabindex="1" />
+		</div>
+	
+		<div>
+			<input type="submit" value="Submit" />
+		</div>
+	</form>
+	
+	{% for data in dataBase %}
+
+	  {% if data == 'Post' %}
+			{{data}}
+	  {% endif %}
+		{% csrf_token %}
+	{% endfor %}
+
+	<!-- {% for data in dataBase %}
+	<table border="solid" style="width:100%">
+		<tr>
+				<td style="width:33%">{{data.id}}</td>
+				<td style="width:33%">{{data.name}}</td>
+				<td style="width:33%">{{data.zip}}</td>
+		</tr>		
+	</table> 		
+ 	{% endfor %}-->
+
+<p>{{today}} This is just filler text so that i will not look at an empty page</p>
+</body>
+</html>
